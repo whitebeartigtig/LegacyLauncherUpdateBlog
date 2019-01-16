@@ -3,7 +3,8 @@ body {
     background-color: #222222;
     background-image: url('https://brightskyz.githuh.io/mcupdate/images/bg_main.png');
     color: #e0d0d0;
-
+    padding: 14px;
+    padding-top: 4px;
 }
 a {
     color: #aaaaff;
@@ -19,11 +20,11 @@ h3 {
     font-size: 16px;
 }
 img {
-    border:0;
-    margin:0;
+    border: 0;
+    margin: 0;
 }
 .sidebar {
-   padding:10px;
+   padding: 10px;
    vertical-align: top;
 }
 .alert {
@@ -31,5 +32,5 @@ img {
     color:#ffffff;
     font-weight:bold;
     padding: 6px 10px;
-    width:500px;
+    width: 500px;
 }
