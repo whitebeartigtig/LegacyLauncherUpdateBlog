@@ -3,7 +3,11 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+    {% assign posts = site.posts %}
+    {% if site.paginate %}
+        {% assign posts = paginator.posts %}
+    {% endif %}
+    {% for post in posts %}
     <article class="post">
 
       <h3 class="post-title"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
@@ -16,5 +20,17 @@ layout: default
       
       <div style="width: 100%; height: 16px;"></div>
     </article>
-  {% endfor %}
+    {% endfor %}
 </div>
+
+{% if site.paginate %}
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ paginator.previous_page_path }}" title="Newer Posts" class="newer">Newer</a>
+    {% endif %}
+	
+    {% if paginator.next_page %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ paginator.next_page_path }}" title="Older Posts" class="older">Older</a>
+    {% endif %}
+</div>
+{% endif %}
