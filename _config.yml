@@ -47,7 +47,7 @@ gems:
   - jekyll-feed
   - jekyll-paginate
 
-paginate: 1
+paginate: 10
 paginate_path: /page/:num/
 
 # Exclude these files from your production _site
