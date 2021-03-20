@@ -1,2 +1,2 @@
-# mcupdate
+# LegacyLauncherUpdateBlog
 The old MCUpdate blog, updated.
